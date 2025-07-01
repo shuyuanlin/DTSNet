@@ -2,42 +2,53 @@
 DTSNet: A denoising teacher-student network with reverse distillation for anomaly detection
 
 ## DTSNet implementation
-TBD
+Code implementation of ICME 2025 paper: DTSNet: A denoising teacher-student network with reverse distillation for anomaly detection.
 
 ## Requirements
-TBD
+
+```
+pip install -r requirements.txt
+```
 
 ## Datasets
-TBD
+
+Download Mvtec dataset from [URL](https://www.mvtec.com/company/research/datasets/mvtec-ad/).
+
+Download VisA dataset from [URL](https://amazon-visual-anomaly.s3.us-west-2.amazonaws.com/VisA_20220922.tar).
+
+Download BTAD dataset from [URL](https://avires.dimi.uniud.it/papers/btad/btad.zip).
 
 ## Test pretrained model
-TBD
+The pretrained weights can be found [here](TBD).
 
 ```shell
-python TBD 
+python inference.py
 ```
 ## Train
-xxxxxxx
+To train and test the DTSNet method on MVTEC/VisA/BTAD, please run:
 
 ```shell
-python TBD
+python main_mvtec.py
 ```
 
-## Inference
-TBD
+```shell
+python main_visa.py
+```
 
-## ...
+```shell
+python main_btad.py
+```
 
 ## ...
 
 
 ## Citation
-```shell
+```
 @article{lin2025dtsnet,
   title = {DTSNet: A denoising teacher-student network with reverse distillation for anomaly detection},
   author = {Taixiang Lin, Shuyuan Lin*, Yanjie Liang, Rong Rong, Yang Lu},
   journal = {Proceedings of the IEEE International Conference on Multimedia and Expo},
-  pages = {2--6},
+  pages = {1--6},
   year = {2025},
 }
 ```
